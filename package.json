@@ -4,7 +4,11 @@
   "description": "full e-commerce site using mern",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon backend/server",
+    "dev":"SET NODE_ENV=DEVELOPMENT& nodemon backend/server",
+    "prod":"SET NODE_ENV=PRODUCTION& nodemon backend/server",
+    "seeder":"node backend/utils/seeder.js"
   },
   "repository": {
     "type": "git",
