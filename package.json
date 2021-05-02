@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon backend/server",
-    "dev":"SET NODE_ENV=DEVELOPMENT& nodemon backend/server",
-    "prod":"SET NODE_ENV=PRODUCTION& nodemon backend/server",
-    "seeder":"node backend/utils/seeder.js"
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon backend/server",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon backend/server",
+    "seeder": "node backend/utils/seeder.js"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,14 @@
   },
   "homepage": "https://github.com/sidhant2709/My-E-Commerce-Project#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.12.4"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.4",
+    "nodemailer": "^6.5.0",
+    "validator": "^13.6.0"
   }
 }
