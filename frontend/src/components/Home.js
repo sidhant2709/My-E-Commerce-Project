@@ -35,7 +35,7 @@ const Home = () => {
           <Metadata title={`Buy Best Products Online`} />
           <h1 id="products_heading">Latest Products</h1>
           <section id="products" className="container mt-5">
-            <div className="row">
+            <div className="row" style={{ border: "0px solid black" }}>
               {products &&
                 products.map((product) => (
                   <Product key={product._id} product={product} />
