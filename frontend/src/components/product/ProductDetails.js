@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Carousel } from "react-bootstrap";
 
 import Loader from "../layout/Loader";
-import Metadata from "../layout/Metadata";
+// import Metadata from "../layout/Metadata";
 
 import { useAlert } from "react-alert";
 
