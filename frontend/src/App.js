@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
@@ -9,16 +9,16 @@ import ProductDetails from "./components/product/ProductDetails";
 
 function App() {
   return (
-    <Router>
-      <React.Fragment>
-        <Header />
-        <div className="container">
-          <Route path="/" component={Home} exact />
-          <Route path="/product/:id" component={ProductDetails} exact />
-        </div>
-        <Footer />
-      </React.Fragment>
-    </Router>
+    <React.Fragment>
+      <Header />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} exact />
+          <Route path="/product/:id" element={<ProductDetails />} exact />
+        </Routes>
+      </div>
+      <Footer />
+    </React.Fragment>
   );
 }
 
